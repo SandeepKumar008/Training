@@ -1,0 +1,10 @@
+package com.valtech.traning.hibernate;
+
+public class Registration {
+	
+	private int id;
+	private String username;
+	private String password;
+	private int mobile;
+
+}

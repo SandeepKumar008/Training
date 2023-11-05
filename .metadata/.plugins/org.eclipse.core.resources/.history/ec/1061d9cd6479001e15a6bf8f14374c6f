@@ -1,0 +1,66 @@
+package com.valtech.traning.hibernate.client;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.AnnotationConfiguration;
+
+import com.valtech.traning.hibernate.AtmTx;
+import com.valtech.traning.hibernate.ChequeTx;
+import com.valtech.traning.hibernate.Employee;
+import com.valtech.traning.hibernate.TellerTx;
+import com.valtech.traning.hibernate.Tx;
+
+public class HibernateClient {
+	
+	public static void main(String[] args) throws Exception {
+		DateFormat df = new SimpleDateFormat("dd-mm-yyyy");
+		AnnotationConfiguration cfg = new AnnotationConfiguration();
+		cfg.addAnnotatedClass(Employee.class);
+		cfg.addAnnotatedClass(Tx.class).addAnnotatedClass(ChequeTx.class).addAnnotatedClass(TellerTx.class).addAnnotatedClass(AtmTx.class);
+		org.hibernate.SessionFactory sesFac= cfg.buildSessionFactory();
+		Session ses = sesFac.openSession();
+		Transaction tx = ses.beginTransaction();
+		
+		
+		ses.save(new Tx(1000));
+		ses.save(new ChequeTx(2000,123123,34435));
+		ses.save(new TellerTx(3000,123,657));
+		ses.save(new AtmTx(5000,4324));
+		
+		
+	
+		ses.createQuery("from Tx tx").list().forEach(t -> System.out.println(t));
+ 
+		
+//		int id = (Integer)ses.save(new Employee("Abc",df.parse("15-08-1947"),20000,'M',false));
+//		System.out.println(id);
+		
+//		Employee e = (Employee)ses.load(Employee.class, 1);  //as soon as the ses calls the hibernate syncs with the updates
+//		System.out.println(e.getClass().getName());
+//		e.setName("Abc2");
+
+		
+		
+		tx.commit();
+		ses.close();
+		sesFac.close();
+		
+	
+	}
+
+}
+
+
+
+
+//ses.persist(new Employee("Abc",LocalDate.of(1947, 8, 15),20000,'M',false));
+
+
+
+//ses.merge(e);   //
+
+//System.out.println("loading.....");

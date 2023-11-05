@@ -1,0 +1,13 @@
+package com.valtech.traning.hibernate;
+
+import java.time.LocalDate;
+
+public class Employee {
+	
+	private int id;
+	private String Name;
+	private LocalDate dob;
+	private float salary;
+	private char gender;
+	private boolean active;
+}

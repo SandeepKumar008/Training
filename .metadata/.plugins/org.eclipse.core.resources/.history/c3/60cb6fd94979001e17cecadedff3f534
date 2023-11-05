@@ -1,0 +1,29 @@
+package com.valtech.traning.hibernate;
+
+public class Tx {
+	
+
+	private String id;
+	private float amount;
+	public Tx(float amount) {
+		super();
+		this.amount = amount;
+	}
+	public Tx() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	public float getAmount() {
+		return amount;
+	}
+	public void setAmount(float amount) {
+		this.amount = amount;
+	}
+	
+}

@@ -1,0 +1,11 @@
+package com.valtech.traning.hibernate;
+
+public class RegAddress {
+	
+	private String street;
+	private String city;
+	private String Zip;
+	
+	
+
+}

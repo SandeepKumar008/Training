@@ -1,0 +1,37 @@
+package com.valtech.traning.hibernate;
+
+import javax.persistence.Entity;
+
+@Entity
+public class ChequeTx extends Tx {
+	
+	private int chequeNUm;
+	public ChequeTx(float amount, int micr) {
+		super(amount);
+		this.micr = micr;
+	}
+	public ChequeTx(float amount) {
+		super(amount);
+		// TODO Auto-generated constructor stub
+	}
+	public ChequeTx(String id, float amount) {
+		super(amount);
+		// TODO Auto-generated constructor stub
+	}
+	private int micr;
+	public int getChequeNUm() {
+		return chequeNUm;
+	}
+	public void setChequeNUm(int chequeNUm) {
+		this.chequeNUm = chequeNUm;
+	}
+	public int getMicr() {
+		return micr;
+	}
+	public void setMicr(int micr) {
+		this.micr = micr;
+	}
+	
+	
+
+}
