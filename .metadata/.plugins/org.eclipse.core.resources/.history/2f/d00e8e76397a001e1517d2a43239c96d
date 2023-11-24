@@ -1,9 +1,0 @@
-package com.valtech.training.spring;
-
-
-public class UtilsBean {
-
-	private java.util.List<String> names;
-	
-	
-}

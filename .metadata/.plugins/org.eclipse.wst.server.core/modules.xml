@@ -3,4 +3,5 @@
   <module moduleId="org.eclipse.jst.jee.server:assignmentDynamicProject" serverId="Tomcat v8.5 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:DepartmentEmployee" serverId="Tomcat v8.5 Server at localhost (2)"/>
   <module moduleId="org.eclipse.jst.jee.server:EmployeeJspProject" serverId="Tomcat v8.5 Server at localhost (2)"/>
+  <module moduleId="org.eclipse.jst.j2ee.server:SandeepJSP" serverId="Tomcat v8.5 Server at localhost"/>
 </modules>
