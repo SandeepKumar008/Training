@@ -6,7 +6,7 @@ public class Student {
 	String gender;
 	int age;
 	long phone;
-	float gpa;
+	double gpa;
 	char degree;
 	boolean international;
 	double tutionFees = 12000.0;
@@ -45,15 +45,28 @@ public class Student {
 	}
 
 	public Student(int id, String name, String gender, int age, long phone, float gpa, char degree) {
-		this(id, name, gender,age,phone,gpa,degree,false);
-
+		super();
+		this.id = id;
+		this.name = name;
+		this.gender = gender;
+		this.age = age;
+		this.phone = phone;
+		this.gpa = gpa;
+		this.degree = degree;
 	}
 
+	boolean updateProfile(String name) {
+		this.name=name;
+		return true;
+		
+	}
+
+	//These all lines as cut and pasted in Student Test class
 	public static void main(String[] args) {
 
-		Student student1 = new Student(1000, "sandeep", "male", 23, 8107058611L, 3.4f, 'A', true);
-		Student student2 = new Student(1001, "supreet", "male", 23, 8107058611L, 2.4f, 'A');
-		Student student3 = new Student(1002, "kartik", "male", 23, 675744456L, 2.4f, 'A', true);
+//		Student student1 = new Student(1000, "sandeep", "male", 23, 8107058611L, 3.4f, 'A', true);
+//		Student student2 = new Student(1001, "supreet", "male", 23, 8107058611L, 2.4f, 'A');
+//		Student student3 = new Student(1002, "kartik", "male", 23, 675744456L, 2.4f, 'A', true);
 		/*
 		 * this is commented bcz all this we don't required as we have defined the
 		 * constructor and parameter are self defined in the constructor for the
@@ -77,8 +90,8 @@ public class Student {
 //		BigDecimal f = new BigDecimal("0.9");
 //		BigDecimal s= new BigDecimal("1");
 //		System.out.println(f.subtract(s));
-		System.out.println("Number of times function Invoke:  " + studentCount);
-
+		//System.out.println("Number of times function Invoke:  " + studentCount);
+//System.out.println(student1.name);
 	}
 
 }
