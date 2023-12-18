@@ -1,0 +1,12 @@
+package com.sandeep.practice.learnspringframework.game;
+
+public class MarioGame {
+
+	
+	public void up() {
+		System.out.println("UP");
+		System.out.println("Down");
+		System.out.println("Left");
+		System.out.println("Right");
+	}
+}

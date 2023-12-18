@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="org.springframework.aop.AfterReturningAdvice"/>
-    <fullyQualifiedTypeName name="org.springframework.aop.ThrowsAdvice"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="org.springframework.aop.MethodBeforeAdvice"/>
     <fullyQualifiedTypeName name="org.aopalliance.intercept.MethodInterceptor"/>
@@ -60,4 +58,6 @@
     <fullyQualifiedTypeName name="java.math.BigDecimal"/>
     <fullyQualifiedTypeName name="Com.Sandeep.Ass1.MoneyTransferService"/>
     <fullyQualifiedTypeName name="Com.Sandeep.Ass1.CurrencyConverter"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>

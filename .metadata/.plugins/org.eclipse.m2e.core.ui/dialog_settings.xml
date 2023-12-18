@@ -27,16 +27,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.valtech.traning.mobile.rating.ui"/>
-			<item value="com.valtech.traning.mobile.ranking"/>
-			<item value="org."/>
 		</list>
 		<list key="groupId">
-			<item value="com.valtech.traning"/>
 		</list>
 		<list key="artifactId">
-			<item value="mobile-rating-ui"/>
-			<item value="mobile-ranking"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -52,13 +46,12 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="com.valtech.traning"/>
+			<item value="com.sandeep.app"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="mobile-rating-ui"/>
-			<item value="mobile-rating-app"/>
+			<item value="Log4JExample"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

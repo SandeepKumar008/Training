@@ -1,0 +1,20 @@
+package com.sandeep.practice.learnspringframework.game;
+
+public class SuperContra {
+
+	private MarioGame game;
+
+	public SuperContra(MarioGame game) {
+		this.game = game;
+
+	}
+
+	public void run() {
+
+		game.up();
+		game.down();
+		game.right();
+		game.left();
+
+	}
+}
